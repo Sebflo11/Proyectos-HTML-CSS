@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey-Travel</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id='title'>Travel Survey Form</h1>
+            <p id="description">Help us improve your travels. Thanks for your time.</p>
+        </header>
+        <form id="survey-form" method="post" action="index.html">
+            <fieldset>
+                <label for="name" id="name-label">
+                    Name
+                    <input 
+                        id="name" 
+                        name="name" 
+                        type="text" 
+                        placeholder="Enter your name" 
+                        required
+                        class="form-control"
+                    />
+                </label>
+                <label for="email" id="email-label">
+                    Email
+                    <input 
+                        id="email" 
+                        name="email" 
+                        type="email" 
+                        placeholder="example@email.com" 
+                        required
+                        class="form-control"
+                    />
+                </label>
+                <label for="age" id="number-label">
+                    Age (optional)</p>
+                    <input 
+                        id="number" 
+                        name="age" 
+                        type="number" 
+                        placeholder="Age"
+                        min=16 
+                        max="120" 
+                        class="form-control"
+                    />
+                </label>
+            </fieldset>
+            <fieldset id="option">
+                <label>
+                    <p>Have you already traveled with us?</p>
+                    <select id="dropdown">
+                        <option value="">Select current role</option>
+                        <option value="1">Australia</option>
+                        <option value="2">New Zealand</option>
+                        <option value="3">Canada</option>
+                        <option value="4">France</option>
+                        <option value="5">Hawaii</option>
+                        <option value="6">Other</option>
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset id="radio-control">
+                <p>Would you recommend Travel to a friend?</p>
+                <label for="definitely">
+                    <input type="radio" name="recommend" id="definitely" value="definitely" class="inline"/>
+                    Definitely
+                </label>
+                <label for="maybe">
+                    <input type="radio" name="recommend" id="maybe" value="maybe" class="inline"/>
+                    Maybe
+                </label>
+                <label for="not-sure">
+                    <input type="radio" name="recommend" id="not-sure" value="not-sure" class="inline"/>
+                    Not sure
+                </label>
+            </fieldset>
+            <fieldset id="option">
+                <label>
+                    What country would you like to know?
+                    <select id="dropdown">
+                        <option value="">Select current role</option>
+                        <option value="1">Japon</option>
+                        <option value="2">Denmark</option>
+                        <option value="3">Germany</option>
+                        <option value="4">Egypt</option>
+                        <option value="5">South Africa</option>
+                        <option value="6">Peru</option>
+                        <option value="7">Other</option>
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset id="checkbox-control">
+                <p>What would you like to improve or generate in Travel?</p>
+                <label for="customer">
+                    <input type="checkbox" id="customer" name="customer" value="customer"
+                    class="inline" />
+                    Customer Support
+                </label>
+                <label for="travel">
+                    <input type="checkbox" id="travel" name="travel" value="travel"
+                    class="inline"/>
+                    Travel insurance
+                </label>
+                <label for="flights">
+                    <input type="checkbox" id="flights" name="flights" value="flights"
+                    class="inline"/>
+                    Flights
+                </label>
+                <label for="stays">
+                    <input type="checkbox" id="stays" name="stays" value="stays"
+                    class="inline"/>
+                    Stays
+                </label>
+                <label for="rides">
+                    <input type="checkbox" id="rides" name="rides" value="rides"
+                    class="inline"/>
+                    Rides
+                </label>
+                <label for="excursions">
+                    <input type="checkbox" id="excursions" name="excursions" value="excursions"
+                    class="inline"/>
+                    Excursions
+                </label>
+                <label for="foods">
+                    <input type="checkbox" id="foods" name="foods" value="foods"
+                    class="inline"/>
+                    Foods
+                </label>
+                <label for="others">
+                    <input type="checkbox" id="others" name="others" value="others"
+                    class="inline"/>
+                    Others
+                </label>
+            
+            <fieldset id="textarea-control">
+                <p>Any comments or suggestions?</p>
+                <textarea
+                    id="comments"
+                    name="comments"
+                    rows="3"
+                    cols="30"
+                ></textarea>
+            </fieldset>
+            <button type="submit" id="submit" value="submit" class="btn" ;">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
